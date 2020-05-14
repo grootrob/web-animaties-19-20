@@ -58,8 +58,8 @@ section svg {
 }
 
 .spinnerPos {
-    max-width: 20vw;
-    height: 20vw;
+    max-width: 25vw;
+    height: 25vw;
     transform-origin: center;
     -webkit-transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
     -webkit-transform: rotateZ(0deg);
@@ -77,8 +77,8 @@ section svg {
 }
 
 .sectionBoven svg {
-    position: relative;
-    right: -120px
+    position: absolute;
+    right: 5rem;
 }
 
 .sectionOnder svg {

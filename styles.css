@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #fffdf9;
+    max-width: 100vw;
+}
+
+body {
+    padding: 5rem;
+    max-width: 100vw;
+}
+
+h1,
+h2,
+p {
+    font-family: sans-serif;
+    width: 50vw
+}
+
+h1,
+h2 {
+    font-size: 2.5rem;
+}
+
+h1 {
+    color: #F18F8B;
+}
+
+h2 {
+    color: #7DBA98;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    color: #F18F8B;
+    font-weight: 500;
+}
+
+section svg {
+
+    /*    max-height: 100vh*/
+}
+
+#RoodBolletjes {
+    mix-blend-mode: multiply;
+}
+
+#BlauwBolletjes {
+    mix-blend-mode: multiply;
+}
+
+#GroenBolletjes {
+    mix-blend-mode: multiply;
+}
+
+.spinnerPos {
+    max-width: 20vw;
+    height: 20vw;
+    transform-origin: center;
+    -webkit-transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    -webkit-transform: rotateZ(0deg);
+
+
+}
+
+.spinnerPos:hover {
+    -webkit-transform: rotateZ(3600deg);
+}
+
+.sectionBoven {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionBoven svg {
+    position: relative;
+    right: -120px
+}
+
+.sectionOnder svg {
+    max-width: 100vw;
+    display: block;
+    margin: 3rem auto;
+
+}

@@ -20,6 +20,8 @@ p {
     width: 50vw
 }
 
+
+
 h1,
 h2 {
     font-size: 2.5rem;
@@ -74,6 +76,7 @@ section svg {
 .sectionBoven {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 3rem
 }
 
 .sectionBoven svg {
@@ -86,4 +89,8 @@ section svg {
     display: block;
     margin: 3rem auto;
 
+}
+
+.good {
+    filter: invert(1);
 }

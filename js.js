@@ -1,11 +1,13 @@
-window.addEventListener('mousemove', onMouseMove);
-
-function onMouseMove(e) {
-    var x = e.clientX || e.touches[0].clientX;
-    var x = e.clientY || e.touches[0].clientY;
-
-    worldYAngle = -(.5 - (x / window.innerWidth)) * 180;
-    worldXAngle = -(.5 - (y / window.innerWidth)) * 180;
-    updateView();
-    event.preventDefault();
-}
+// First we detect the click event
+document.getElementById('section2').addEventListener('click', function () {
+    // Using an if statement to check the class
+    if (this.classList.contains('bad')) {
+        // The box that we clicked has a class of bad so let's remove it and add the good class
+        this.classList.remove('bad');
+        this.classList.add('good');
+    } else {
+        // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
+        this.classList.remove('good');
+        this.classList.add('bad');
+    }
+});

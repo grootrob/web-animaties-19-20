@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    padding: 5vw;
+    padding: 3vw;
     max-width: 100vw;
+    overflow: hidden;
 }
 
 h1,
@@ -35,6 +36,15 @@ h2 {
     color: #7DBA98;
 }
 
+h3 {
+    color: #F18F8B;
+    transform: scale(.7, 1);
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+
+}
+
 p {
     font-size: 1.3rem;
     margin-top: 4rem;
@@ -42,14 +52,42 @@ p {
     font-weight: 500;
 }
 
-section svg {
+span {
+    color: #F18F8B;
+    font-family: sans-serif;
+    margin: 10px 0;
+    padding: 20px 10px;
+    font-weight: 600;
+    display: inline-block;
+    border: 3px solid #F18F8B;
+    border-radius: 500px;
+}
 
-    /*    max-height: 100vh*/
+.area1 span:hover {}
+
+.area2 svg {
+    max-height: 22vh;
+}
+
+#section2 {
+    /*    max-width: 100vw;*/
+    /*    overflow: hidden;*/
+    /*    position: relative;*/
+    /*    right: 30%;*/
+    margin: 0 -50%;
+}
+
+#section2 svg {
+    display: block;
+    margin: 0 auto;
+    height: 70vh;
 }
 
 #RoodBolletjes {
     mix-blend-mode: multiply;
 }
+
+
 
 #BlauwBolletjes {
     mix-blend-mode: multiply;
@@ -59,12 +97,15 @@ section svg {
     mix-blend-mode: multiply;
 }
 
+circle {
+    margin: 10px;
+}
+
+
 .spinnerPos {
-    max-width: 25vw;
-    height: 25vw;
     transform-origin: center;
     -webkit-transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    -webkit-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(360deg);
 
 
 }
@@ -74,23 +115,209 @@ section svg {
 }
 
 .sectionBoven {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3rem
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 3rem;
+    /*    background-color: azure;*/
 }
+
+
 
 .sectionBoven svg {
-    position: absolute;
-    right: 5vw;
-}
-
-.sectionOnder svg {
-    max-width: 100vw;
+    width: 80%;
     display: block;
-    margin: 3rem auto;
-
+    margin: -40px auto;
 }
+
+.sectionOnder svg {}
 
 .good {
     filter: invert(1);
+}
+
+
+
+/*Bolletjes Animatie*/
+
+
+svg #BlauwBolletjes {
+    transform-origin: center;
+    animation: BlauwBolletjes 2s ease-in-out infinite;
+}
+
+svg #RoodBolletjes {
+    transform-origin: center;
+    animation: RoodBolletjes 3s ease-in-out infinite;
+}
+
+svg #GroenBolletjes {
+    transform-origin: center;
+    animation: GroenBolletjes 4s ease-in-out infinite;
+}
+
+
+
+@keyframes BlauwBolletjes {
+
+    25% {
+        transform: translatey(2px) translatex(3px);
+    }
+
+    50% {
+        transform: translatey(4px) translatex(1px);
+    }
+
+    75% {
+        transform: translatey(-2px) translatex(-3px);
+    }
+
+    100% {
+        transform: translatey(0px) translatex(0px)
+    }
+}
+
+@keyframes RoodBolletjes {
+
+    25% {
+        transform: translatey(2px) translatex(3px);
+    }
+
+    50% {
+        transform: translatey(4px) translatex(1px);
+    }
+
+    75% {
+        transform: translatey(-2px) translatex(-3px);
+    }
+
+    100% {
+        transform: translatey(0px) translatex(0px)
+    }
+}
+
+
+@keyframes GroenBolletjes {
+
+    25% {
+        transform: translatey(2px) translatex(3px);
+    }
+
+    50% {
+        transform: translatey(4px) translatex(1px);
+    }
+
+    75% {
+        transform: translatey(-2px) translatex(-3px);
+    }
+
+    100% {
+        transform: translatey(0px) translatex(0px)
+    }
+}
+
+/*
+svg #BlauwBolletjes:hover {
+    transform-origin: center;
+
+    transform: translatey(2px) translatex(2px);
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+}
+
+svg #RoodBolletjes:hover {
+    transform-origin: center;
+    transform: translatey(-4px) translatex(0px);
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+}
+
+svg #GroenBolletjes:hover {
+    transform-origin: center;
+
+    transform: translatey(7px) translatex(9px);
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+}*/
+
+/*
+@keyframes BlauwCenter {
+
+    100% {
+        transform: translatey(2px) translatex(2px)
+    }
+}
+*/
+
+
+
+
+
+
+/*"M" Click event*/
+
+.cls-1 {
+    fill: #5db4e0;
+}
+
+area2 .cls-1 {
+    fill: #5db4e0;
+}
+
+.cls-2 {
+    fill: #f18f8b;
+}
+
+.cls-3 {
+    fill: #7dba98;
+}
+
+
+.click {
+    background-color: black;
+}
+
+.clickCyaan {
+    color: cyan;
+    fill: cyan;
+}
+
+.clickMagenta {
+    color: magenta;
+    fill: magenta !important;
+}
+
+.clickGeel {
+    color: yellow;
+    fill: yellow;
+    border-color: yellow;
+}
+
+
+.fillMagenta {
+    fill: #ff27ff !important;
+    mix-blend-mode: difference !important;
+}
+
+.fillCyaan {
+    fill: cyan !important;
+    mix-blend-mode: difference !important;
+}
+
+.fillGeel {
+    fill: yellow !important;
+    mix-blend-mode: difference !important;
+}
+
+.fillMagenta circle {
+    fill: #ff27ff !important;
+}
+
+.fillCyaan circle {
+    fill: cyan !important;
+
+}
+
+.fillGeel circle {
+    fill: yellow !important;
+
 }

@@ -80,7 +80,9 @@ span {
 #section2 svg {
     display: block;
     margin: 0 auto;
-    height: 70vh;
+    max-height: 70vh;
+    min-height: 30vh;
+    transform-origin: center;
 }
 
 #RoodBolletjes {
@@ -104,14 +106,14 @@ circle {
 
 .spinnerPos {
     transform-origin: center;
-    -webkit-transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    -webkit-transition: all 6s cubic-bezier(0.25, 0.1, 0.25, 1);
     -webkit-transform: rotateZ(360deg);
 
 
 }
 
 .spinnerPos:hover {
-    -webkit-transform: rotateZ(3600deg);
+    -webkit-transform: rotateZ(1800deg);
 }
 
 .sectionBoven {
@@ -126,7 +128,7 @@ circle {
 .sectionBoven svg {
     width: 80%;
     display: block;
-    margin: -40px auto;
+    margin: 0px auto;
 }
 
 .sectionOnder svg {}
@@ -319,5 +321,9 @@ area2 .cls-1 {
 
 .fillGeel circle {
     fill: yellow !important;
+}
+
+.fillSpinner path {
+    fill: magenta !important;
 
 }

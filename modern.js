@@ -10,8 +10,10 @@ var blendMode2 = document.getElementById('RoodBolletjes');
 var blendMode3 = document.getElementById('GroenBolletjes');
 var blendSpinner = document.getElementById('Spinner');
 
+//document.getElementById('modern').addEventListener('click', toggle);
 
 window.addEventListener("keydown", toggle);
+
 
 function toggle(event) {
     if (event.keyCode === 84) {

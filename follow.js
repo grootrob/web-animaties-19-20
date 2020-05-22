@@ -2,7 +2,7 @@
     /*************/
     /* follow me */
     /*************/
-    let followMe = document.querySelector("#follow-me");
+    let followMe = document.querySelector("#modern");
 
     followMe.onmousemove = handleMouseMove;
 

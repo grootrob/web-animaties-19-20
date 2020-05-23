@@ -1,18 +1,23 @@
 /*eslint-env browser*/
 
+// Invert bolletjes event
+// bron: https://www.freecodecamp.org/forum/t/adding-class-to-multiple-elements-same-class-javascript/211922
+
+
 document.getElementById('section2').addEventListener('click', function () {
-    // Using an if statement to check the class
     if (this.classList.contains('bad')) {
-        // The box that we clicked has a class of bad so let's remove it and add the good class
         this.classList.remove('bad');
         this.classList.add('good');
     } else {
-        // The user obviously can't follow instructions so let's alert them of what is supposed to happen next
         this.classList.remove('good');
         this.classList.add('bad');
     }
 });
 
+
+
+// Moderne kleuren event
+// bron: https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
 
 var htmlModern = document.querySelector('html');
 var h1Geel = document.querySelector('h1');

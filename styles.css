@@ -119,7 +119,7 @@ span {
     -webkit-transform: rotateZ(900deg);
 }
 
-.spinnerPos:active {
+.spinnerPos:hover .spinnerPos:active {
     -webkit-transform: rotateZ(900deg);
 }
 

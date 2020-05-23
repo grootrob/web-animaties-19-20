@@ -49,7 +49,7 @@ h3 {
 
 p {
     font-size: 2.5vw;
-    margin-top: 4rem;
+    margin-top: 2rem;
     color: #F18F8B;
     font-weight: 500;
 }
@@ -92,7 +92,6 @@ span {
 }
 
 
-
 #BlauwBolletjes {
     mix-blend-mode: multiply;
 }
@@ -101,9 +100,6 @@ span {
     mix-blend-mode: multiply;
 }
 
-circle {
-    margin: 10px;
-}
 
 
 .spinnerPos {
@@ -356,5 +352,6 @@ area2 .cls-1 {
 
     p {
         font-size: 1.3rem;
+        margin-top: 4rem;
     }
 }

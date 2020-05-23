@@ -1,28 +1,27 @@
-//window.onload = function () {
+//var bodyModern = document.querySelector('body');
+//var h1Geel = document.querySelector('h1');
+//var h2Magenta = document.querySelector('h2');
+//var h3Cyaan = document.querySelector('h3');
+//var pCyaan = document.querySelector('p');
+//var spanGeel = document.querySelector('span');
+//var spanGeel2 = document.getElementById('modern');
+//var blendMode = document.getElementById('BlauwBolletjes');
+//var blendMode2 = document.getElementById('RoodBolletjes');
+//var blendMode3 = document.getElementById('GroenBolletjes');
+//var blendSpinner = document.getElementById('Spinner');
+//var buttonMobiel = document.getElementById('modernMobiel');
 //
-//    var parallaxBox = document.getElementById('section2');
-//    var c1left = document.getElementsByClassName('cls-1').offsetLeft,
-//        c1top = document.getElementsByClassName('cls-12').offsetTop,
-//        c2left = document.getElementsByClassName('cls-3').offsetLeft;
 //
-//    parallaxBox.onmousemove = function (event) {
-//        event = event || window.event;
-//        var x = event.clientX - parallaxBox.offsetLeft,
-//            y = event.clientY - parallaxBox.offsetTop;
-//
-//        mouseParallax('cls-1', c1left, c1top, x, y, 5);
-//        mouseParallax('cls-2', c2left, c2top, x, y, 15);
-//        mouseParallax('cls-3', c3left, c3top, x, y, 30);
-//
-//    }
-//
-//}
-//
-//function mouseParallax(id, left, top, mouseX, mouseY, speed) {
-//    var obj = document.getElementById(id);
-//    var parentObj = obj.parentNode,
-//        containerWidth = parseInt(parentObj.offsetWidth),
-//        containerHeight = parseInt(parentObj.offsetHeight);
-//    obj.style.left = left - (((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) * speed) + 'px';
-//    obj.style.top = top - (((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) * speed) + 'px';
-//}
+//buttonMobiel.addEventListener('click', function () {
+//    bodyModern.classList.toggle('click');
+//    h1Geel.classList.toggle('clickGeel');
+//    pCyaan.classList.toggle('clickCyaan');
+//    h2Magenta.classList.toggle('clickMagenta');
+//    h3Cyaan.classList.toggle('clickCyaan');
+//    spanGeel.classList.toggle('clickGeel');
+//    spanGeel2.classList.toggle('clickGeel');
+//    blendMode.classList.toggle('fillMagenta');
+//    blendMode2.classList.toggle('fillCyaan');
+//    blendMode3.classList.toggle('fillGeel');
+//    blendSpinner.classList.toggle('fillSpinner');
+//});

@@ -1,4 +1,5 @@
-// First we detect the click event
+/*eslint-env browser*/
+
 document.getElementById('section2').addEventListener('click', function () {
     // Using an if statement to check the class
     if (this.classList.contains('bad')) {

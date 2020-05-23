@@ -119,6 +119,10 @@ span {
     -webkit-transform: rotateZ(900deg);
 }
 
+.spinnerPos:active {
+    -webkit-transform: rotateZ(900deg);
+}
+
 .sectionBoven {
     display: grid;
     grid-template-columns: 60% 40%;
